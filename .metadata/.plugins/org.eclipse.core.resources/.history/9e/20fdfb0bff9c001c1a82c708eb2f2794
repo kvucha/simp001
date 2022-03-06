@@ -1,0 +1,6 @@
+package com.javatechie.ps.api.service;
+
+@Service
+public class PaymentService {
+
+}

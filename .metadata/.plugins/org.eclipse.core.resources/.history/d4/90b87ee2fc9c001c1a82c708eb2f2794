@@ -1,0 +1,8 @@
+package com.javatechie.ors.api.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class OrderService {
+
+}

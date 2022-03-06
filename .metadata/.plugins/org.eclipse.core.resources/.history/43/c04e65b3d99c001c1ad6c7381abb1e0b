@@ -1,0 +1,5 @@
+package com.javtechie.spring.graph.api.controller;
+
+public class HighChartController {
+
+}

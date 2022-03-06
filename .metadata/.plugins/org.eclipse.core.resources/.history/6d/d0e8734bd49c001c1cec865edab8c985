@@ -1,0 +1,23 @@
+package com.javtechie.spring.graph.api.service;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javtechie.spring.graph.api.dao.LangSurveyRepo;
+import com.javtechie.spring.graph.api.model.Programming;
+
+@Service
+public class LangService {
+	
+	
+	@Autowired
+	private LangSurveyRepo repo;
+	
+	
+	public List<Programming> listAll() {
+		return repo.findAll();
+		
+	}
+
+}

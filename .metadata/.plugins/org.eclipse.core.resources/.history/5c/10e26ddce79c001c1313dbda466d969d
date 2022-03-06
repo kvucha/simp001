@@ -1,0 +1,12 @@
+package com.javatechie.model;
+
+@Entity
+public class YearPopulation {
+	
+	private Long id;
+	private Long Year;
+	private int population;
+	
+	
+
+}

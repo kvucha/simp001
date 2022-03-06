@@ -1,0 +1,13 @@
+package com.freeCode.datasource;
+
+public class OracleDatasource {
+	@Bean
+	@ConfigurationProperties("app.datasource")
+	public HikariDataSource hikariDataSource() {
+		return DataSourceBuilder
+			   .create()
+			   .type(HikariDataSource.class)
+			   .build();
+	}
+
+}

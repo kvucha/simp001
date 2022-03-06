@@ -1,0 +1,6 @@
+package com.javatechie.service;
+
+@Service
+public class YearPopulationService {
+
+}

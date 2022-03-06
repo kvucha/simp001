@@ -1,0 +1,6 @@
+package com.javatechie.ors.api.controller;
+
+@RestController
+public class OrderController {
+
+}

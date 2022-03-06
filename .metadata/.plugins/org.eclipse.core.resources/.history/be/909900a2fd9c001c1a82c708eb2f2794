@@ -1,0 +1,20 @@
+package com.javatechie.ors.api.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.javatechie.ors.api.entity.Order;
+import com.javatechie.ors.api.service.OrderService;
+
+@RestController
+public class OrderController {
+	
+	@Autowired
+	private OrderService service;
+	
+	public Order bookOrder(@RequestBody Order order) {
+		
+	}
+
+}

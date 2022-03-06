@@ -1,0 +1,13 @@
+package com.javatechie;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DbhighchartApplication implements WebMvcConfigurer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DbhighchartApplication.class, args);
+	}
+
+}

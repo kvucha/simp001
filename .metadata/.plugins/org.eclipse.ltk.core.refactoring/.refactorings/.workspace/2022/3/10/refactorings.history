@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;simple&apos; to &apos;mvnrestapi&apos;" description="Rename resource &apos;simple&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/simple" name="mvnrestapi" stamp="1646515893310" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;dbhighchart&apos; to &apos;nodbhighchart&apos;" description="Rename resource &apos;dbhighchart&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/dbhighchart" name="nodbhighchart" stamp="1646522349056" updateReferences="true"/>
+</session>

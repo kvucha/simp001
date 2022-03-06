@@ -1,0 +1,45 @@
+package com.freeCode.api;
+
+
+@RequestMapping("mapi/v1/person")
+@RestController
+public class PersonController {
+
+@Autowired	
+private PersonService personService;
+
+@RequestMapping(method = RequestMethod.GET )
+public List<Person> getAllPersons() {
+	return personService.getAllPersons();
+}
+
+
+@GetMapping(path ="{id}")
+public Person getPersonById(@PathVariable("id") int id) {
+	return personService.getPersonByID(id);
+}
+
+@RequestMapping(method = RequestMethod.PUT,consumes = MediaType.APPLICATION_JSON_VALUE)
+public void updatePerson(@RequestBody Person person) {
+	personService.updatePerson(person);
+}
+
+
+
+@RequestMapping(method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
+public void insertPerson(@RequestBody Person person) {
+	personService.insertPerson(person);
+}
+
+
+@RequestMapping(path ="{id}",method = RequestMethod.DELETE)
+public void deletePersonById(@PathVariable("id") int id) {
+	personService.removePersonById(id);
+}
+
+
+
+
+
+
+}

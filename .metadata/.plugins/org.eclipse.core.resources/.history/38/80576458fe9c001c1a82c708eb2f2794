@@ -1,0 +1,9 @@
+package com.javatechie.ps.api.entity;
+
+public class Payment {
+	
+	private int paymentId;
+	private String paymentStatus;
+	
+
+}

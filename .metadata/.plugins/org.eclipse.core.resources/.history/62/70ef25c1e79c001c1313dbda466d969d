@@ -1,0 +1,11 @@
+package com.javatechie.model;
+
+public class YearPopulation {
+	
+	private Long id;
+	private Long Year;
+	private int population;
+	
+	
+
+}

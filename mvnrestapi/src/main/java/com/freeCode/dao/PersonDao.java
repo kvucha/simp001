@@ -1,0 +1,15 @@
+///00000002
+
+package com.freeCode.dao;
+
+import java.util.List;
+
+import com.freeCode.model.Person;
+
+public interface PersonDao {
+	void insertPerson(Person person);
+	List<Person> getAllPersons();
+	void updatePerson(Person person);
+	void removePersonByID(int id);
+	Person getPersonByID(int id);
+}

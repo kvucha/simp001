@@ -1,0 +1,5 @@
+package com.freeCode.model;
+
+public class Person {
+
+}

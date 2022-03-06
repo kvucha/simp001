@@ -1,0 +1,6 @@
+package com.javatechie.ps.api.contorller;
+
+@RestController
+public class PaymentController {
+
+}

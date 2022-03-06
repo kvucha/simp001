@@ -1,0 +1,67 @@
+package com.javtechie.spring.graph.api.controller;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.javtechie.spring.graph.api.model.Programming;
+import com.javtechie.spring.graph.api.service.LangService;
+
+@RestController
+public class GraphController {
+
+	@GetMapping("/get-data")
+	public String barGraph(Model model) {
+		Map<String, Integer> surveyMap = new LinkedHashMap<>();
+		surveyMap.put("Java", 40);
+		surveyMap.put("Dev oops", 25);
+		surveyMap.put("Python", 20);
+		surveyMap.put(".Net", 15);
+		model.addAttribute("surveyMap", surveyMap);
+		return "barGraph";
+	}
+	
+	/*
+	 * Lets take above method but lets retreive data from Database
+	 * 
+	 * 
+	 * 
+	 */
+	
+	@Autowired
+	private LangService service;
+	
+	@GetMapping("/displayBarGraphdb")
+	public String barGraphdb(Model model) {
+		List<Programming> listProgSurvey = service.listAll();
+		Map<String, Integer> surveyMap = new LinkedHashMap<>();
+		
+	for (int i = 0; i < listProgSurvey.size(); i++) {
+		surveyMap.put(listProgSurvey.get(i).getLanguage(), listProgSurvey.get(i).getRating());
+	}
+		/*
+		surveyMap.put("dbJava", 60);
+		surveyMap.put("dbDev oops", 35);
+		surveyMap.put("dbPython", 28);
+		surveyMap.put("db.Net", 11);
+		*/
+		model.addAttribute("surveyMaq", surveyMap);
+		model.addAttribute("cntry", "Japan");
+		return "barGraphdb";
+	}	
+	
+
+	@GetMapping("/displayPieChart")
+	public String pieChart(Model model) {
+		model.addAttribute("pass", 50);
+		model.addAttribute("fail", 50);
+		return "pieChart";
+	}
+
+}

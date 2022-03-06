@@ -1,0 +1,37 @@
+
+spring.jpa.hibernate.ddl-auto=none
+spring.datasource.url=jdbc:oracle:thin:@orclawsdb.cq74gjum1pxq.us-east-1.rds.amazonaws.com:1521:ORCL
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.username=c##scott
+spring.datasource.password=IMAGEora1
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+
+logging.level.root=INFO
+
+
+
+
+# logging
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+logging.level.org.hibernate.SQL=debug
+#logging.level.org.hibernate.type.descriptor.sql=trace
+logging.level.=error
+
+
+
+
+spring.jpa.hibernate.ddl-auto=none
+#spring.datasource.url=jdbc:oracle:thin:@localhost:1521:orclkris
+#spring.datasource.url=jdbc:oracle:thin:@localhost:1522:ORCLCDB
+spring.datasource.url=jdbc:oracle:thin:@orclawsdb.cq74gjum1pxq.us-east-1.rds.amazonaws.com:1521:ORCL
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#spring.datasource.username=c##scott
+#spring.datasource.username=docuser3
+spring.datasource.username=admin
+#spring.datasource.password=IMAGEora1
+#spring.datasource.password=pwd003
+spring.datasource.password=oracleUSER1$
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+
+logging.level.root=INFO
+

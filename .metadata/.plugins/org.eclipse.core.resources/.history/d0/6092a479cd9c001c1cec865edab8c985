@@ -1,0 +1,5 @@
+package com.freeCode.datasource;
+
+public class OracleDatasource {
+
+}

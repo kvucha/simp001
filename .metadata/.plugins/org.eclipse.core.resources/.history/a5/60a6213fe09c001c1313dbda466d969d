@@ -1,0 +1,23 @@
+package com.javatechie.model;
+
+public class YearPopulation {
+	private Long Year;
+	private int population;
+	
+	
+	public Long getYear() {
+		return Year;
+	}
+	public void setYear(Long year) {
+		Year = year;
+	}
+	public int getPopulation() {
+		return population;
+	}
+	public void setPopulation(int population) {
+		this.population = population;
+	}
+
+	
+
+}

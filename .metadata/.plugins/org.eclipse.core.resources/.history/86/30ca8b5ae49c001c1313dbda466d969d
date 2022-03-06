@@ -1,0 +1,18 @@
+package com.javatechie.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javatechie.dao.PopulationRepo;
+
+@Service
+public class YearPopulationService {
+
+	@Autowired
+	private PopulationRepo repo;
+	
+	
+	public List<YearPopulation> listAll() {
+		return repo.findAll();
+	}
+}

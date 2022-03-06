@@ -1,0 +1,13 @@
+package com.javatechie.ors.api.service;
+
+import org.springframework.stereotype.Service;
+
+import com.javatechie.ors.api.repository.OrderRepository;
+
+@Service
+public class OrderService {
+	
+	@Autowired
+	private OrderRepository repository; 
+
+}

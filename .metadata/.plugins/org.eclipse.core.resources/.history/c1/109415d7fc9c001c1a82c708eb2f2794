@@ -1,0 +1,6 @@
+package com.javatechie.ors.api.service;
+
+@Service
+public class OrderService {
+
+}

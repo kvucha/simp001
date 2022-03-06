@@ -1,0 +1,10 @@
+package com.javatechie.ps.api.contorller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PaymentController {
+
+	
+	private PaymentService service;
+}

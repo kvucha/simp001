@@ -1,0 +1,10 @@
+package com.javtechie.spring.graph.api.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.javtechie.spring.graph.api.model.Programming;
+
+public interface LangSurveyRepo 
+             extends JpaRepository<Programming,Long>{
+
+}

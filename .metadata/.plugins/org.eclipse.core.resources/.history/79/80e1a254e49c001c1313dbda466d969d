@@ -1,0 +1,13 @@
+package com.javatechie.service;
+
+import org.springframework.stereotype.Service;
+
+import com.javatechie.dao.PopulationRepo;
+
+@Service
+public class YearPopulationService {
+
+	@Autowired
+	private PopulationRepo repo;
+	
+}
